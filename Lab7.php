@@ -143,7 +143,7 @@ class AccountHandler
         $userId = AuthorizationHelper::getSessionUserId();
 
         if (null === $password) { // 8
-            return $password; // 8
+            return []; // 8 , 9
         }
 
         return UserRecords::getById($userId);
