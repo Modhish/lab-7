@@ -3,7 +3,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . '/.core/account/user_records.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/.core/account/login_attempt_handler.php');
 require_once($_SERVER['DOCUMENT_ROOT'] . '/.core/.utilities/validation_Super_helper.php'); // 1
 require_once($_SERVER['DOCUMENT_ROOT'] . '/.core/.utilities/safe_string_Super_helper.php'); // 1
-require_once($_SERVER['DOCUMENT_ROOT'] . '/.core/account/authorization_Super_helper.php'); // 1
+require_once($_SERVER['DOCUMENT_ROOT'] . '/.core/user/authorization_helper.php'); // 1 3
 
 class AccountHandler
 {
