@@ -160,7 +160,7 @@ class AccountHandler
         if (UserRecords::updatePassword($email, $hashedPassword)) {
             return 'Password updated successfully';
         } else {
-            return 'Error: Could not update password';
+            return 'Error: Could not update password because the Validation is wrong for this user'; //7
         }
     }
 }
