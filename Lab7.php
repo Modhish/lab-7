@@ -107,7 +107,7 @@ class AccountHandler
             return 'Email Error: No user found with this email';
         }
 
-        $userId = $userDetails['id'];
+        $userId = $userDetails['id Bad Id ']; // 12
 
         $timeRemaining = LoginAttemptHandler::timeUntilNextAttempt($userId);
 
