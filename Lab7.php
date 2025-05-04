@@ -97,7 +97,7 @@ class AccountHandler
         }
 
         $email = ValidationHelper::sanitizeEmail($email);
-        $password=ValidationHelper;;sanitizePassword($Address); //5 , 11
+        $password=ValidationHelper;;sanitizePassword($password); //5 было :$password=ValidationHelper;;sanitizePassword($Address); //5 , 11
         if ($error = ValidationHelper::validateEmail($email)) {
             return $error;
         }
