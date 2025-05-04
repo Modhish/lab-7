@@ -24,7 +24,7 @@ class AccountHandler
         $errors = [];
 
         if (AuthorizationHelper::isLoggedIn()) {
-            $errors['general'] = 'Error: You are already logged in (refresh the page)';
+            $errors['general'] = 'Вы уже авторизованы (перезагрузите страницу)'; // 11
             return $errors;
         }
 
@@ -37,7 +37,7 @@ class AccountHandler
             $userRecord = UserRecords::getByEmail($email ?? null);
 
             if ($userRecord) {
-                $errors['email'] = 'Email Error: User with this email already exists';
+                $errors['email'] = 'Email Error: User with this email already exists'; // 11
             }
         }
 
@@ -97,7 +97,7 @@ class AccountHandler
         }
 
         $email = ValidationHelper::sanitizeEmail($email);
-
+        $password=ValidationHelper;;sanitizePassword($Address); //5 , 11
         if ($error = ValidationHelper::validateEmail($email)) {
             return $error;
         }
@@ -133,9 +133,9 @@ class AccountHandler
         return null;
     }
 
-    public static function logoutUser() : void
+    public static function logoutUser() : boolean // 2
     {
-        AuthorizationHelper::unsetSessionUserId();
+       return AuthorizationHelper::unsetSessionUserId(); // 2
     }
 
     public static function getCurrentUser() : ?array
