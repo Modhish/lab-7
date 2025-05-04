@@ -49,8 +49,8 @@ class AccountHandler
             'hobbies' => 'validateMainInterests',
             'socialLink' => 'validateSocialLink',
             'bloodGroup' => 'validateBloodGroup',
-            'factor' => 'validateFactor',
-            'password1' => 'validatePassword'
+            'Rh_factor' => 'validateRh_Factor', //6
+            'password1and2' => 'validatePassword1and2'//6
         ];
 
         foreach ($fields as $field => $validator) {
