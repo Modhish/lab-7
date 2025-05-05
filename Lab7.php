@@ -47,7 +47,8 @@ class AccountHandler
             'residence' => 'validateAddress',
             'gender' => 'validateGender',
             'Extra-hobbies' => 'validateMainInterests', 
-            'socialLink' => 'validateSocialLink',
+            'socialLink' => 'validateSocialLink-VK or Instegram', // 10
+            'bloodGroup' => 'validateBloodGroup',
             'Rh_factor' => 'validateRh_Factor', //6
             'password1and2' => 'validatePassword1and2'//6
         ];
