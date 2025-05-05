@@ -11,7 +11,7 @@ class AccountHandler
         ?string $email,
         ?string $fullName,
         ?string $dob,
-        ?string $residence,
+        ?string $Address, // 10
         ?string $gender,
         ?string $hobbies,
         ?string $socialLink,
@@ -46,9 +46,8 @@ class AccountHandler
             'dob' => 'validateDateOfBirth',
             'residence' => 'validateAddress',
             'gender' => 'validateGender',
-            'hobbies' => 'validateMainInterests',
+            'Extra-hobbies' => 'validateMainInterests', 
             'socialLink' => 'validateSocialLink',
-            'bloodGroup' => 'validateBloodGroup',
             'Rh_factor' => 'validateRh_Factor', //6
             'password1and2' => 'validatePassword1and2'//6
         ];
